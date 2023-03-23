@@ -1,0 +1,167 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+@keyframes appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes spotify {
+    0%{color: white;}
+    50%{color:linear-gradient(150deg, #1DB954, white);}
+    100%{color:#1DB954;}
+}
+
+* {
+    animation: appear 1s forwards;
+    font-size: 24px;
+    box-sizing: border-box;
+}
+
+body {
+    cursor: default;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', serif;
+    background: linear-gradient(150deg, #191414, #1DB954);
+}
+
+h1 {
+    color: white;
+    font-size: 2.3em;
+    margin-bottom: 65px;
+    transition: transform 1s;
+}
+
+h1:hover {
+    animation: spotify 1.5s;
+    transform: scale(1.1);
+}
+
+.container {
+    position: relative;
+    margin: 3.75vh 8vw 3.75vh 8vw;
+    border-radius: 15px;
+    padding: 95px 150px 95px 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: linear-gradient(150deg, #272727, black);
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.log {
+    margin-bottom: 30px;
+}
+
+.image {
+    margin: 0;
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    width: 350px;
+    transition: transform 1.01s;
+}
+
+.image img:hover {
+    transform: scale(1.05);
+}
+
+.sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    width: 370px;
+    color: white;
+    background: #1DB954;
+    border-style: none;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    transition: transform 0.5s;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.sign:hover {
+    
+    transform: scale(1.05);
+    color: white;
+}
+
+.another_log a{
+    background: white;
+    box-sizing: border-box;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.5s;
+    height: 2em;
+    width: 370px;
+    padding-right: 10px;
+}
+
+.another_log a:hover {
+    transform: scale(1.05);
+}
+
+.another_log img {
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    height: 2em;
+    width: 370px;
+    border-style: solid;
+    border-radius: 50px;
+}
+
+input[type="email"], input[type="password"] {
+    margin: 12px 0px 12px 0;
+    padding-left: 1.7em;
+    transition: transform 0.5s;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+input[type="email"]:hover, input[type="password"]:hover {
+    transform: scale(1.05);
+}
+
+input[type="checkbox"] {
+    margin: 1em 0.5em 1em 1em;
+    width: 0.85em;
+    height: 0.85em;
+}
+
+label {
+    font-size: 0.85em;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+.forgot:hover {
+    color: #1DB954;
+}
