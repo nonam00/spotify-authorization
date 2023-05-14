@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="static/styles/style.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Login page</title>
   </head>
   <body>
@@ -14,16 +14,25 @@
         <h1>Welcome to Spotify</h1>
         <div class="log">
           <form>
-            <input placeholder="Username" type="email" name="Email" class = "username" />
-            <input placeholder="Password" type="password" name="Password" class = "password"/>
+            <input
+              placeholder="Username"
+              type="email"
+              name="Email"
+              class="username"
+            />
+            <input
+              placeholder="Password"
+              type="password"
+              name="Password"
+              class="password"
+            />
             <div>
               <input type="checkbox" id="checkbox" />
               <label for="check">Stay signed in</label>
             </div>
-            <a onclick="change_bord" class = "sign" href="https://open.spotify.com/" target="_blank">SIGN IN</a>
+            <a class="sign" href="https://open.spotify.com/">SIGN IN</a>
             <a class="forgot" href="#">Forgot the password?</a>
           </form>
-          
         </div>
         <div class="another_log">
           <a href="#">
